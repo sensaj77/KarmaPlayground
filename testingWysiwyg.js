@@ -1,3 +1,4 @@
+
 var assert = require('assert');
 var chai = require('chai');
 var React = require( "react/addons" );
@@ -135,7 +136,7 @@ var setSelectionRange = function(element, start, end) {
     sel.addRange(rng);
 };
 
-setSelectionRange(element, 3, 15);
+setSelectionRange(element, 3, 11);
 
 
 
@@ -143,9 +144,9 @@ setSelectionRange(element, 3, 15);
 
 
     var selObj = window.getSelection();
-    var selectedText = selObj.toString();
+    
 
-    console.log("Newest " + selectedText)
+    console.log("Newest " + selObj)
 
 
     assert.equal(1,1);
@@ -155,4 +156,12 @@ setSelectionRange(element, 3, 15);
 
    });
 
- });
+ 
+
+});
+     
+
+
+
+
+
